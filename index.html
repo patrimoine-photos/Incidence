@@ -1,32 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrimoine Photos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Restauration photo ancienne & numérisation HD | Incidence</title>
+  <meta name="description" content="Plaques de verre, négatifs, diapositives, tirages papier : numérisation HD et restauration (rayures, poussières, fissures). Devis gratuit, en France à distance." />
+
+  <!-- Canonical (à changer si domaine custom) -->
+  <link rel="canonical" href="https://patrimoine-photos.github.io/Incidence/" />
+
+  <!-- OpenGraph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Restauration photo ancienne & numérisation HD | Incidence" />
+  <meta property="og:description" content="Numérisation HD & restauration de photos anciennes : verre, négatifs, papier, diapositives. Devis gratuit." />
+  <meta property="og:url" content="https://patrimoine-photos.github.io/Incidence/" />
+  <meta property="og:image" content="https://patrimoine-photos.github.io/Incidence/assets/img/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts (premium) -->
+  <link rel="preconnect" href="https://fonts.cdnfonts.com">
+  <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+
+  <!-- JSON-LD LocalBusiness/ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Incidence (Patrimoine Photos)",
+    "description":"Numérisation haute définition et restauration de photos anciennes (plaques de verre, négatifs, diapositives, tirages papier).",
+    "url":"https://patrimoine-photos.github.io/Incidence/",
+    "areaServed":{"@type":"Country","name":"France"},
+    "email":"incidence.image@gmail.com",
+    "serviceType":[
+      "Restauration photo ancienne",
+      "Numérisation photo ancienne",
+      "Numérisation plaques de verre",
+      "Numérisation négatifs",
+      "Numérisation diapositives",
+      "Retouche d'archives familiales"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage (section FAQ ci-dessous) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Est-ce que je dois vous envoyer les originaux ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Pas forcément. Pour un premier avis, une photo au smartphone suffit. Si vous souhaitez une numérisation HD ou une restauration fine, l'envoi des originaux peut être nécessaire. Dans tous les cas, nous expliquons la marche à suivre (emballage, suivi, retour)."}
+      },
+      {
+        "@type":"Question",
+        "name":"Quels supports traitez-vous ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Plaques de verre, négatifs (noir et blanc/couleur), diapositives, tirages papier anciens et documents photographiques liés aux archives familiales."}
+      },
+      {
+        "@type":"Question",
+        "name":"Combien de temps pour un devis ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Objectif : réponse sous 48h ouvrées après réception des informations (type de support, quantité approximative, état, et idéalement une photo d'exemple)."}
+      },
+      {
+        "@type":"Question",
+        "name":"La confidentialité est-elle respectée ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Oui. Les fichiers sont utilisés uniquement pour réaliser la prestation et communiquer sur votre projet. Nous ne publions rien sans accord explicite."}
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
-    <h1>Préserver vos photographies familiales</h1>
-    <div class="hero">
-        <h2>Hero Title</h2>
-        <p>Methodology <a href="/methodology">link</a></p>
-        <!-- Removed "avec un rendu naturel" -->
+
+<body data-page="home">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Accueil Incidence (Patrimoine Photos)">
+        <span class="brand__logo-wrap" aria-hidden="true">
+          <img class="brand__logo" src="assets/img/logo-incidence-premium.svg" alt="" width="40" height="40" decoding="async">
+        </span>
+        <span class="brand__text">
+          <span class="brand__title">INCIDENCE</span>
+          <span class="brand__line">Patrimoine Photos</span>
+          <span class="brand__line brand__line--meta">Restauration &amp; numérisation d'archives</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+      </button>
+
+      <nav id="nav" class="nav" aria-label="Navigation principale" data-nav>
+        <div class="nav__main">
+          <a class="nav__link" href="index.html">Accueil</a>
+          <a class="nav__link" href="prestations.html">Prestations</a>
+          <a class="nav__link" href="avant-apres.html">Avant/Après</a>
+          <a class="nav__link" href="methode.html">Méthode</a>
+          <a class="nav__link" href="articles/index.html">Articles</a>
+          <a class="nav__link" href="youtube.html">YouTube</a>
+          <a class="nav__link nav__link--ext" href="https://patrimoine-photos.myportfolio.com/" target="_blank" rel="noopener">Galerie</a>
+          <a class="nav__link" href="contact.html">Contact</a>
+        </div>
+      </nav>
+
     </div>
-    <ul>
-        <li>Une méthode adaptée</li>
-        <li>Livraison des fichiers + suggestions pour la conservation des originaux</li>
-        <li>(En option) Validation card title</li>
-        <li>Confidentialité : aucune publication sans accord, et ne seront jamais utilisés pour des publications</li>
-        <!-- Removed unnecessary labels like "Objectif:" and additional lines as instructed -->
-    </ul>
-    <p>Restauration douce : poussières éliminables manuellement, retouche</p>
-    <div class="faq">
-        <p>FAQ answer about originaux updated.</p>
-        <!-- Removed "couleur" from supports answer -->
-        <!-- Removed "Envoyer une photo" button -->
+  </header>
+
+  <main id="contenu" class="site-main">
+    <section class="hero reveal">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="kicker" data-accent-cycle data-accent="blue">Restauration photo ancienne • Numérisation haute définition</p>
+          <h1 class="hero__title">Préserver vos archives familiales <span class="title-break">avec un rendu naturel</span></h1>
+          <p class="hero__lead">
+            Plaques de verre, négatifs, diapositives, tirages papier : nous numérisons et restaurons vos images anciennes
+            (rayures, poussières, taches, fissures, contraste) avec une retouche sobre, fidèle à l'original.
+            L'objectif est simple : préserver la mémoire familiale et la transmettre sans trahir l'époque ni l'intention du photographe.
+          </p>
+
+          <div class="hairline" data-accent-cycle aria-hidden="true"></div>
+
+          <div class="hero__cta">
+            <a class="btn btn--cta" href="contact.html">Envoyer une photo pour avis</a>
+          </div>
+
+          <div class="hairline" data-accent-cycle aria-hidden="true"></div>
+
+          <ul class="bullets bullets--compact">
+            <li>Devis gratuit • Objectif : réponse sous <strong>48h ouvrées</strong></li>
+            <li>Travail à distance (France) • Conseils d'emballage si envoi</li>
+            <li>Confidentialité : aucune publication sans accord</li>
+          </ul>
+        </div>
+
+        <aside class="hero__aside">
+          <div class="hero-mini">
+            <p class="hero-mini__title">Avant/Après exemple</p>
+
+            <figure class="ba" data-ba>
+              <div class="ba__stage ba__stage--mobile-tall-home" style="--ba-ratio: 893 / 1400;">
+                <img class="ba__img" src="assets/img/avant-apres/champ-avant.jpg" alt="Avant restauration : plaque de verre avec défauts (poussières, rayures)" width="893" height="1400" loading="lazy" decoding="async">
+                <img class="ba__img ba__img--after" src="assets/img/avant-apres/champ-apres.jpg" alt="Après restauration : plaque de verre restaurée avec rendu naturel" width="893" height="1400" loading="lazy" decoding="async">
+                <span class="ba__label ba__label--before">Avant</span>
+                <span class="ba__label ba__label--after">Après</span>
+              </div>
+              <label class="sr-only" for="ba-mini">Comparer avant/après</label>
+              <input id="ba-mini" class="ba__range" type="range" min="0" max="100" value="55" data-ba-range>
+            </figure>
+            <p class="img-note">Exemple de restauration sur plaque de verre.</p>
+
+            <p><a class="btn btn--ghost" href="avant-apres.html">Voir plus d'exemples</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="hairline" aria-hidden="true"></div>
+
+    <section class="section reveal">
+      <div class="section__head">
+        <h2>Prestations essentielles</h2>
+        <p class="muted">Une offre claire — pensée pour les supports anciens.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Numérisation HD</h3>
+          <p>Capture haute définition adaptée au support (papier, film, verre) pour préserver le maximum de détails.</p>
+          <p class="card__meta">Service dédié à la numérisation photo ancienne en haute définition, pour conserver chaque détail utile.</p>
+        </article>
+
+        <article class="card">
+          <h3>Restauration douce</h3>
+          <p>Rayures, poussières, taches, fissures, contraste : correction progressive, avec un rendu naturel.</p>
+          <p class="card__meta">Approche de restauration photo ancienne avec correction des rayures, poussières et fissures sans sur-retouche.</p>
+        </article>
+
+        <article class="card">
+          <h3>Validation</h3>
+          <p>Vous visualisez l'évolution. Nous ajustons si besoin pour rester fidèle à l'esprit de l'image.</p>
+          <p class="card__meta">Comparaison avant/après de la restauration photo pour valider un résultat fidèle à l'original.</p>
+        </article>
+      </div>
+
+      <div class="section__cta">
+        <a class="btn btn--cta" href="prestations.html">Voir les supports traités</a>
+        <a class="btn btn--ghost" href="contact.html">Envoyer une photo</a>
+      </div>
+    </section>
+
+    <section class="section section--split reveal">
+      <div>
+        <div class="section__head">
+          <h2>Une méthode prudente</h2>
+          <p class="muted">Les archives demandent de la délicatesse : manipulation, capture, restauration, livraison.</p>
+        </div>
+
+        <ul class="checklist">
+          <li>Identification du support (verre, film, papier, diapo)</li>
+          <li>Préparation / nettoyage prudent (selon cas)</li>
+          <li>Numérisation HD + restauration (défauts, contraste, reconstitution)</li>
+          <li>Livraison des fichiers + conseils de sauvegarde</li>
+        </ul>
+
+        <p>
+          <a class="text-link" href="methode.html">Lire la méthodologie complète</a>
+        </p>
+      </div>
+
+      <aside class="callout">
+        <h3>Envoyer une photo pour avis</h3>
+        <p class="muted">Un exemple (même smartphone) suffit pour estimer la faisabilité et vous orienter.</p>
+        <a class="btn btn--cta btn--block" href="contact.html">Demander un devis</a>
+        <p class="micro">Galerie complète : <a class="text-link" href="https://patrimoine-photos.myportfolio.com/" target="_blank" rel="noopener">MyPortfolio</a>.</p>
+      </aside>
+    </section>
+
+    <section class="section reveal">
+      <div class="section__head">
+        <h2>FAQ</h2>
+        <p class="muted">Questions fréquentes avant d'envoyer vos photos anciennes.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Est-ce que je dois vous envoyer les originaux ?</summary>
+          <p>Pour un premier avis, une photo au smartphone suffit. Pour une numérisation HD ou une restauration fine, l'envoi peut être utile. Nous indiquons la marche à suivre (emballage, suivi, retour).</p>
+        </details>
+        <details>
+          <summary>Quels supports traitez-vous ?</summary>
+          <p>Plaques de verre, négatifs (N&amp;B/couleur), diapositives, tirages papier anciens et archives photographiques associées.</p>
+        </details>
+        <details>
+          <summary>La confidentialité est-elle respectée ?</summary>
+          <p>Oui. Les fichiers sont utilisés uniquement pour votre projet. Aucune publication sans accord explicite.</p>
+        </details>
+      </div>
+
+      <div class="section__cta">
+        <a class="btn btn--cta" href="contact.html">Envoyer une photo</a>
+        <a class="btn btn--ghost" href="articles/index.html">Lire les articles</a>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section__head">
+        <h2>Galerie & vidéos</h2>
+        <p class="muted">Le mini-site sert à convertir. Les séries complètes restent sur MyPortfolio.</p>
+      </div>
+      <div class="cards cards--tight">
+        <article class="card">
+          <h3>Galerie MyPortfolio</h3>
+          <p>Collections, projets, images en grand format.</p>
+          <p><a class="btn btn--ghost" href="https://patrimoine-photos.myportfolio.com/" target="_blank" rel="noopener">Ouvrir la galerie</a></p>
+        </article>
+        <article class="card">
+          <h3>Chaîne YouTube</h3>
+          <p>Avant/après, coulisses, conseils de conservation.</p>
+          <p><a class="btn btn--ghost" href="youtube.html">Voir les vidéos</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__brand">
+          <img class="footer__logo" src="assets/img/logo-incidence-premium.svg" alt="" width="26" height="26" decoding="async">
+          Incidence
+        </p>
+        <p class="muted">Patrimoine Photos — restauration photo ancienne & numérisation HD (travail à distance, France).</p>
+        <p class="muted">Email : <a class="text-link" href="mailto:incidence.image@gmail.com" data-email>incidence.image@gmail.com</a></p>
+      </div>
+
+      <div>
+        <p class="footer__title">Navigation</p>
+        <ul class="footer__links">
+          <li><a href="prestations.html">Prestations</a></li>
+          <li><a href="avant-apres.html">Avant/Après</a></li>
+          <li><a href="methode.html">Méthode</a></li>
+          <li><a href="articles/index.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__title">Liens</p>
+        <ul class="footer__links">
+          <li><a href="https://patrimoine-photos.myportfolio.com/" target="_blank" rel="noopener">Galerie MyPortfolio</a></li>
+          <li><a href="#" data-youtube-link target="_blank" rel="noopener">Chaîne YouTube</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__cta">
+        <a class="btn btn--cta btn--block" href="contact.html">Demander un devis</a>
+        <p class="micro">© <span data-year></span> • Site statique GitHub Pages</p>
+      </div>
     </div>
-    <footer>
-        <!-- Removed "travail à distance" from footer and "Demander un devis" button -->
-    </footer>
+  </footer>
 </body>
 </html>
