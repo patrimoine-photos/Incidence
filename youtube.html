@@ -73,7 +73,6 @@
       </p>
       <div class="page-cta">
         <a class="btn btn--cta" href="#" data-youtube-link target="_blank" rel="noopener">Ouvrir la chaîne</a>
-        <a class="btn btn--ghost" href="{{ '/contact.html' | relative_url }}">Envoyer une photo</a>
       </div>
     </section>
 
@@ -87,22 +86,14 @@
         {% for video in site.data.youtube.videos %}
         <article class="yt-card">
           <h3>{{ video.title }}</h3>
-          <div class="yt" data-youtube="{{ video.id }}" role="group" aria-label="Lecteur YouTube (chargement au clic)">
-            <button class="yt__btn" type="button">
-              <span class="yt__play" aria-hidden="true"></span>
-              <span class="sr-only">Lire la vidéo</span>
-            </button>
-            <p class="yt__hint">Cliquez pour charger</p>
+          <div style="display:flex; align-items:center; justify-content:center; aspect-ratio:16/9; background:#f0eeeb; border-radius:4px;">
+            <p class="muted" style="font-style:italic; letter-spacing:.05em;">À venir</p>
           </div>
           <p class="muted">{{ video.description }}</p>
         </article>
         {% endfor %}
       </div>
 
-      <div class="section__cta">
-        <a class="btn btn--cta" href="{{ '/contact.html' | relative_url }}">Demander un devis</a>
-        <a class="btn btn--ghost" href="{{ '/articles/' | relative_url }}">Lire les articles</a>
-      </div>
     </section>
   </main>
 
@@ -113,7 +104,7 @@
           <img class="footer__logo" src="{{ '/assets/img/logo-incidence-premium.svg' | relative_url }}" alt="" width="26" height="26" decoding="async">
           Incidence
         </p>
-        <p class="muted">Patrimoine Photos — restauration photo ancienne & numérisation HD (travail à distance, France).</p>
+        <p class="muted">Patrimoine Photos — restauration photo ancienne & numérisation HD, France.</p>
         <p class="muted">Email : <a class="text-link" href="mailto:incidence.image@gmail.com" data-email>incidence.image@gmail.com</a></p>
       </div>
       <div>
@@ -133,7 +124,6 @@
         </ul>
       </div>
       <div class="footer__cta">
-        <a class="btn btn--cta btn--block" href="{{ '/contact.html' | relative_url }}">Envoyer une photo</a>
         <p class="micro">© <span data-year></span></p>
       </div>
     </div>

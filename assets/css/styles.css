@@ -693,7 +693,7 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
 }
 .ba__img{ width: 100%; height: 100%; object-fit: cover; display:block; }
 .ba__img--after{ position:absolute; inset:0; clip-path: inset(0 0 0 var(--pos)); }
-.ba__stage--mobile-tall-home .ba__img,
+.ba__stage--mobile-tall-home .ba__img{ object-fit: cover; }
 .ba__stage--mobile-tall-aa .ba__img{ object-fit: contain; }
 .ba__label{
   position:absolute;
