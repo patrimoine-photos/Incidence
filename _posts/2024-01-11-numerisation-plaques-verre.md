@@ -1,21 +1,21 @@
 ---
 layout: post
 title: "Numériser des plaques de verre : précautions et méthode"
-description: "Plaques cassées ou altérées : précautions, numérisation haute définition, restauration des défauts, et conservation durable."
+description: "Plaques cassées ou altérées : précautions, numérisation haute
+  définition, restauration des défauts, et conservation durable."
 date: 2024-01-11 09:00:00 +0100
 archived: false
 breadcrumb: Plaques de verre
 permalink: /articles/numerisation-plaques-verre.html
 ---
-
 Les **plaques de verre** sont parmi les supports photographiques les plus fragiles : elles peuvent être cassées, altérées, ou présenter des défauts visibles. Une **numérisation haute définition** (ou une reproduction adaptée) permet souvent de préserver les détails avant la restauration numérique.
 
 ## 1) Les risques courants
 
-- Casse / fissures
-- Rayures et poussières incrustées
-- Oxydations, taches, zones manquantes
-- Déformations, bordures fragiles
+* Casse / fissures
+* Rayures et poussières incrustées
+* Oxydations, taches, zones manquantes
+* Déformations, bordures fragiles
 
 ## 2) Pourquoi le “HD” est indispensable
 
@@ -24,12 +24,6 @@ Les défauts (rayures, micro-fissures) demandent un fichier riche en détails. P
 ## 3) Après la numérisation : restauration photo ancienne
 
 Selon l’état, on peut corriger poussières, rayures, taches, et parfois reconstituer une partie manquante. L’objectif est un rendu cohérent sans “plastifier” l’image.
-
-<div class="cta-box">
-  <h3>Envoyer une photo pour avis</h3>
-  <p class="muted">Même une photo smartphone permet d’évaluer la faisabilité.</p>
-  <p><a class="btn btn--cta" href="../contact.html">Demander un devis</a></p>
-</div>
 
 ## 4) Envoi postal : conseils simples
 
