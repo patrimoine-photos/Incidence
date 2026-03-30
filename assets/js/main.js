@@ -28,6 +28,7 @@ const SITE = {
   initArticleCards();
   initBeforeAfter();
   initYouTube();
+  initImageLightbox();
 })();
 
 function bindNav() {
@@ -277,5 +278,88 @@ function initYouTube() {
       block.innerHTML = "";
       block.appendChild(iframe);
     }, { once: true });
+  });
+}
+
+function initImageLightbox() {
+  const figures = Array.from(document.querySelectorAll(".thumb-duo figure"));
+  if (!figures.length) return;
+
+  const lightbox = document.createElement("div");
+  lightbox.className = "lightbox";
+  lightbox.hidden = true;
+  lightbox.innerHTML = `
+    <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Image agrandie">
+      <button class="lightbox__close" type="button" aria-label="Fermer l'image agrandie">Fermer</button>
+      <figure class="lightbox__figure">
+        <img class="lightbox__image" alt="">
+        <figcaption class="lightbox__caption"></figcaption>
+      </figure>
+    </div>
+  `;
+  document.body.appendChild(lightbox);
+
+  const lightboxImage = lightbox.querySelector(".lightbox__image");
+  const lightboxCaption = lightbox.querySelector(".lightbox__caption");
+  const closeButton = lightbox.querySelector(".lightbox__close");
+  let previousFocus = null;
+
+  const closeLightbox = () => {
+    if (lightbox.hidden) return;
+
+    lightbox.hidden = true;
+    document.body.removeAttribute("data-lightbox-open");
+    lightboxImage.removeAttribute("src");
+    lightboxImage.alt = "";
+    lightboxCaption.textContent = "";
+
+    if (previousFocus instanceof HTMLElement) {
+      previousFocus.focus();
+    }
+  };
+
+  const openLightbox = (figure) => {
+    const image = figure.querySelector("img");
+    if (!image) return;
+
+    previousFocus = document.activeElement;
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt || "";
+    lightboxCaption.textContent = image.alt || "";
+    lightbox.hidden = false;
+    document.body.setAttribute("data-lightbox-open", "true");
+    closeButton.focus();
+  };
+
+  figures.forEach((figure) => {
+    const image = figure.querySelector("img");
+    if (!image) return;
+
+    figure.classList.add("is-zoomable");
+    figure.tabIndex = 0;
+    figure.setAttribute("role", "button");
+    figure.setAttribute("aria-haspopup", "dialog");
+    figure.setAttribute("aria-label", `Agrandir l'image : ${image.alt || "aperçu"}`);
+
+    figure.addEventListener("click", () => openLightbox(figure));
+    figure.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      openLightbox(figure);
+    });
+  });
+
+  closeButton.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeLightbox();
+    }
   });
 }
