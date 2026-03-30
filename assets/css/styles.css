@@ -1123,8 +1123,14 @@ body{
 
 .hero__title .title-break{
   display: block;
-  font-size: .72em;
-  letter-spacing: .06em;
+  font-size: inherit;
+  letter-spacing: inherit;
+  white-space: nowrap;
+}
+@media (max-width: 720px){
+  .hero__title .title-break{
+    white-space: normal;
+  }
 }
 
 .hero-mini,
